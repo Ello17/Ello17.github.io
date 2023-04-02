@@ -104,7 +104,7 @@ h3 span{
 }
 @media screen and (max-width:900px) {
     .co{
-        width: 120px;
+        width: 150px;
         height: max-content;
     }
     .les{
