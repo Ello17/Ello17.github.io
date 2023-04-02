@@ -37,11 +37,23 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.contact form, .portofolio-box, .home-img, .motivation-container', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content, .heading, .portofolio-box', { origin: 'top' });
+ScrollReveal().reveal('.contact form, .home-img, .motivation-container', { origin: 'bottom' });
 
 
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("sticky",  window.scrollY > 0);
 })
+
+// const text = document.querySelector("-");
+// const textLoad = () => {
+//   setTimeout(() => {
+//     text.textContent = "AZZELLO";
+//   }, 0);
+//   setTimeout(() => {
+//     text.textContent = "AZZELLO ۞";
+//   }, 2000);
+// }
+// textLoad();
+// setInterval(textLoad, 4000); 

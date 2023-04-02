@@ -470,3 +470,18 @@ box-shadow: 0 0 5px var(--main-color);
         margin-top: 2rem;
     }
 }
+.ro a{
+    animation: text 2s infinite linear;
+   
+}
+@keyframes text {
+    0%{
+        color: white;
+    }
+    50%{
+        color: #BBA14F;
+    }
+    100%{
+        color: white;
+    }
+}
