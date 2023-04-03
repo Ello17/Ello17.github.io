@@ -54,14 +54,16 @@ h2{
 h3{
     text-align: center;
     font-size: xx-large;
-    transition: .3s;
-    cursor: pointer;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 0 0 10px white;
 }
-h3:hover{
+
+/* h3:hover{
     color: red;
     text-shadow: red 1px 0 11px;
     background-size: cover;
-}
+} */
 h3 span{
     font-size: large;
 }
@@ -114,4 +116,22 @@ h3 span{
 }
 .les{
     display: flex;
+    margin-bottom: 160px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    height: 50px;
+}
+.footer{
+    background: #323946;
+    display:block; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    border-radius: 1rem;
+    justify-content: center;
 }
