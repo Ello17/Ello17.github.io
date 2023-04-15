@@ -135,3 +135,20 @@ h3 span{
     border-radius: 1rem;
     justify-content: center;
 }
+h5{
+    animation: hei 1s linear;
+    text-align: center;
+    opacity: 0;
+}
+@keyframes hei {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
