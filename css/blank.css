@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #1f242d;
+}
 .u{
     font-size: 5.6rem;
     font-weight: 700;
@@ -24,19 +31,17 @@
         color: white;
     }
 }
-body{
-    background: #1f242d;
-}
 .box{
     border: 2px solid #1f242d;
     height: max-content;
-    padding: auto;
     width: max-content;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin-top: 20px;
 }
 h2{
     animation: hu 3s linear infinite   ;
+    margin: 10px;
 }
 @keyframes hu {
     0%{
@@ -134,21 +139,4 @@ h3 span{
     padding: 2rem 9%;
     border-radius: 1rem;
     justify-content: center;
-}
-h5{
-    animation: hei 1s linear;
-    text-align: center;
-    opacity: 0;
-}
-@keyframes hei {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-
 }

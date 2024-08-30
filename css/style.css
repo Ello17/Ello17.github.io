@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+    animation: .3s;
+  }
 :root {
     --bg-color: #1f242d;
     --second-bg-color:#323946;
@@ -60,7 +64,10 @@ section{
 }
 .navbar a:hover,.navbar a.active{
     color: var(--main-color);
+    animation: animatebottom .5s ease-in linear;
+    border-bottom: 1px solid var(--main-color);
 }
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -313,6 +320,10 @@ border-radius: 1rem;
 .footer-text p{
     font-size: 1.5rem;
 }
+.footer-text a:hover{
+border-bottom: solid #BBA14F 1px;
+transition: .3s;
+}
 .footer-icon a{
 display: inline-flex;
 justify-content: center;
@@ -381,7 +392,7 @@ box-shadow: 0 0 5px var(--main-color);
         
         border-radius: 5em;
         margin-top: 0.9em;
-        transition: 1.5s ease;
+        transition: 1s ease;
     }
     .header.sticky .logo{
         color: black;
@@ -471,10 +482,14 @@ box-shadow: 0 0 5px var(--main-color);
         margin-top: 2rem;
     }
 }
+
 .ro a{
     animation: text 2s infinite linear;
+    
    
 }
+
+
 @keyframes text {
     0%{
         color: white;
@@ -486,3 +501,8 @@ box-shadow: 0 0 5px var(--main-color);
         color: white;
     }
 }
+::selection {
+    background: #323946;
+    color: #FFFFFF;
+  }
+  
