@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -181,23 +181,26 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="mailto: azzellofabian@gmail.com">
+            <form action="https://formsubmit.co/azzello131@gmail.com" method="post">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" />
-                    <input type="email" placeholder="Email Address" />
+                    <input type="text" name="Full Name" required placeholder="Full Name" />
+                    <input type="email" name="Email" required placeholder="Email Address" />
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Nomor Telepon" />
-                    <input type="text" placeholder="Email Subject" />
+                    <input type="number" name="Number" required placeholder="Nomor Telepon" />
+                    <input type="text" name="subject" required placeholder="Email Subject" />
                 </div>
                 <textarea
-                
-                    name=""
+                    required
+                    name="massage"
                     id=""
                     cols="30"
                     rows="10"
                     placeholder="Pesan Kamu"
                 ></textarea>
+                <input type="hidden" name="_next" value="https://ello17.github.io/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 <input type="submit" value="Kirim Pesan" class="btn" />
             </form>
         </section>
