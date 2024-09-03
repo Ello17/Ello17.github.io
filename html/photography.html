@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ell | Photography</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/photography.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+    <section class="body">
+        <div class="slider">
+            <div class="slides" style="--img: url('/img/photography/campfire.jpeg')">
+                <div class="content">
+                    <h2>Campfire</h2>
+                    <p>11/08/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/cloud 2.jpeg')">
+                <div class="content">
+                    <h2>Cloud</h2>
+                    <p>Cibadak, 29/08/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/cloud.jpeg')">
+                <div class="content">
+                    <h2>Cloud</h2>
+                    <p>Nagrak, 04/08/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/cloud 3.jpeg')">
+                <div class="content">
+                    <h2>Cloud</h2>
+                    <p>Bandung, 01/09/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/farmer.jpeg')">
+                <div class="content">
+                    <h2>Farmer</h2>
+                    <p>Bandung, 03/09/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/sunset.jpeg')">
+                <div class="content">
+                    <h2>Sunset</h2>
+                    <p>Nagrak, 04/08/2024.</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/img/photography/jalur.jpeg')">
+                <div class="content">
+                    <h2>Sunset</h2>
+                    <p>Jalur, 15/06/2024.</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev span-pn"></span>
+            <span class="next span-pn"></span>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p class="oi">Copyright &copy; 2024 by Azzello | IndoMaju <br>
+                 <a href="https://www.acer.com/us-en" style="color: white;">ACER</a> | <a href="https://www.huawei.com/en/" style="color: white;">Huawei</a> | <a href="https://code.visualstudio.com/" style="color: white;">VSCODE</a></p>
+        </div>
+        <div class="footer-icon">
+            <a href="../index.html" title="Back"><i class="fa-solid fa-door-open"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/style.js"></script>
+    <script>
+        let next = document.querySelector('.next');
+let prev  = document.querySelector('.prev');
+let slider  = document.querySelector('.slider');
+
+next.addEventListener('click', function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.appendChild(slides[0]);
+})
+prev.addEventListener('click', function(){
+    let slides = document.querySelectorAll('.slides');
+    slider.prepend(slides[slides.length - 1]);
+})
+
+    </script>
+</body>
+</html>

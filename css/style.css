@@ -180,6 +180,7 @@ border-radius: 1rem;
 .motivation h2{
     margin-bottom: 5rem;
 }
+
 .motivation-container{
     display: flex;
     justify-content: center;
@@ -207,6 +208,8 @@ border-radius: 1rem;
 }
 .motivation-box h3{
     font-size: 2.6rem;
+    padding-bottom: 35px;
+    padding-top: 10px;
 }
 .motivation-box p{
     font-size: 1.6rem;
