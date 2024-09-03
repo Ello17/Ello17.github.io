@@ -102,7 +102,7 @@
     border-left: 4px solid #fff;
     transform: rotate(315deg) translate(2px,2px);
 }
-.buttons .span-pn:nth-child(2)::before
+.buttons .span-pn:nth-child(3)::before
 {
     transform: rotate(135deg) translate(2px,2px);
 }
@@ -177,7 +177,30 @@
 
 }
 .body{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    overflow-y: hidden;
+    align-items: center;
 }
+/* footer{
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+} */
+ .back{
+    display: flex;
+    align-items: center;
+ }
+ .back a{
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+ }
+ .back a i{
+    font-size: 2.4rem;
+    color: white;
+ }
