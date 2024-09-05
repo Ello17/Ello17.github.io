@@ -1,0 +1,10 @@
+.button_code{
+    background-color: rgb(255, 66, 66);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.box-button{
+    margin-top: 20px;
+}
