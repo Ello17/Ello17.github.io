@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/notfound.css">
+</head>
+<body>
+<div id="container_notfound">
+    <div class="content">
+        <h2>404</h2>
+        <h4>Page Not Found</h4>
+        <p>halaman ini sedang di perbaiki.</p>
+        <a href="../index.html">Back To Home</a>
+    </div>
+</div>
+<script type="text/javascript">
+var containernf = document.getElementById('container_notfound');
+window.onmousemove = function (e) {
+    var x = - e.clientX/5;
+        y = - e.clientY/5;
+    containernf.style.backgroundPositionX = x + 'px';
+    containernf.style.backgroundPositionY = y + 'px';
+}
+</script>
+</body>
+</html>
