@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/notfound.css">
-</head>
-<body>
-<div id="container_notfound">
-    <div class="content">
-        <h2>404</h2>
-        <h4>Page Not Found</h4>
-        <p>halaman ini sedang di perbaiki.</p>
-        <a href="../index.html">Back To Home</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/notfound.css">
+    </head>
+    <body>
+        <div id="container_notfound">
+            <div class="content">
+                <h2>404</h2>
+                <h4>Page Not Found</h4>
+                <p>halaman ini sedang di perbaiki.</p>
+                <div class="btn-nf">
+                <a href="../index.html" class="btn-not">Back To Home</a>
+                <button onclick=" requestDeviceOrientation()" class="btn-not">3D</button>
+                </div>
     </div>
 </div>
 <script type="text/javascript">
@@ -24,6 +27,40 @@ window.onmousemove = function (e) {
     containernf.style.backgroundPositionX = x + 'px';
     containernf.style.backgroundPositionY = y + 'px';
 }
+
+
+function handleOrientation(event) {
+    let alpha = event.alpha
+    let beta = event.beta
+    let gamma = event.gamma
+  
+    let cube = document.getElementById('container_notfound');
+    cube.style.transform = 'rotateX(' + beta + 'deg) rotateY(' + gamma + 'deg) rotateZ(' + alpha + 'deg)';
+  
+  }
+  
+  
+  async function requestDeviceOrientation() {
+    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      try {
+        const permissionState = await DeviceOrientationEvent.requestPermission()
+        if (permissionState === 'granted') {
+          window.addEventListener('deviceorientation', handleOrientation)
+        } else {
+          alert('Permission was denied')
+        }
+      } catch (error) {
+        alert(error)
+      }
+    } else if ('DeviceOrientationEvent' in window) {
+      //non iOS 13+ devices
+      console.log("not iOS");
+      window.addEventListener('deviceorientation', handleOrientation)
+    } else {
+      //not supported
+      alert('nicht unterstützt')
+    }
+  }
 </script>
 </body>
 </html>
