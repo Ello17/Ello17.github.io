@@ -38,7 +38,7 @@
     color: #fff;
     font-size: 1.2em;
 }
-#container_notfound .content .btn-not{
+#container_notfound .content a{
     position: relative;
     display: inline-block;
     padding: 10px 25px;
@@ -48,15 +48,4 @@
     margin-top: 25px;
     border-radius: 25px;
     border-bottom: 4px solid #d00d56;
-}
-button{
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-.btn-nf{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: medium;
 }
