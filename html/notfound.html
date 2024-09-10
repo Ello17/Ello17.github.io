@@ -33,9 +33,13 @@ function handleOrientation(event) {
     let alpha = event.alpha
     let beta = event.beta
     let gamma = event.gamma
-  
+    
     let cube = document.getElementById('container_notfound');
-    cube.style.backgroundPosition = 'rotateX(' + beta + 'deg) rotateY(' + gamma + 'deg) rotateZ(' + alpha + 'deg)';
+    var x = - e.clientX/5;
+    var y = - e.clientY/5;
+    cube.style.backgroundPositionY = y + beta + 'deg';
+    cube.style.backgroundPositionX = x + gamma + 'deg';
+
   
   }
   
