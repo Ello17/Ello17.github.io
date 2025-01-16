@@ -35,6 +35,11 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    /* cursor: url("../img/cursor\ \(1\).png"), auto; */
+}
+cursor::selection{
+    
+
 }
 
 section{
@@ -245,6 +250,8 @@ border-radius: 1rem;
 .portofolio-box img{
     width: 100%;
     transition: .5s ease;
+    height: 230px;
+    object-fit:cover;
 }
 .portofolio-box:hover img{
    transform: scale(1.1);
