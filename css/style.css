@@ -382,9 +382,6 @@ box-shadow: 0 0 5px var(--main-color);
 }
 
 @media (max-width: 991px) {
-    .home{
-        margin-top: -30px;
-    }
     .header{
         padding: 2rem 3%;
     }
@@ -414,6 +411,11 @@ box-shadow: 0 0 5px var(--main-color);
     }
     .contact{
         min-height: auto;
+    }
+}
+@media (min-width: 768px) {
+    .home{
+        padding-top: 1rem;
     }
 }
 @media (max-width: 768px) {
