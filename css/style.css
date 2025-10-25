@@ -121,6 +121,7 @@ section{
 }
 .home-content p{
     font-size: 1.6rem;
+    max-width:60rem;
 }
 .sosmed a {
     display: inline-flex;
@@ -165,11 +166,16 @@ span{
     color: var(--bg-color);
 }
 .about{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 2rem;
+display: grid;
+place-items: center;
 background: var(--second-bg-color);
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
 }
 .about-img img{
 width: 35vw;
@@ -189,6 +195,7 @@ border-radius: 1rem;
 .about-content p{
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
+    max-width: 60rem;
 }
 .motivation h2{
     margin-bottom: 5rem;
@@ -407,6 +414,15 @@ box-shadow: 0 0 5px var(--main-color);
 @media (max-width: 768px) {
     #menu-icon{
         display: block;
+    }
+    .about-container{
+        gap: 2rem;
+}
+    .about-content h2{
+        text-align: center;
+    }
+    .about-content{
+        text-align: center;
     }
     .header.sticky{
         background: rgba(255, 255, 255, 0.938) 30%;
