@@ -413,7 +413,7 @@ box-shadow: 0 0 5px var(--main-color);
         min-height: auto;
     }
 }
-@media (min-width: 768px) {
+@media (min-height: 768px) {
     .home{
         padding-top: 1rem;
     }
