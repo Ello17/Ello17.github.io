@@ -37,7 +37,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading, .portofolio-box', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .portofolio-box, .heading-t', { origin: 'top' });
 ScrollReveal().reveal('.contact form, .home-img, .motivation-container', { origin: 'bottom' });
 
 
